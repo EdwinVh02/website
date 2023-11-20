@@ -1,31 +1,19 @@
-import "./App.css";
-import Logo from "./assets/logo.jpg";
-const Navbar = () => {
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Inicio from "./screen/Inicio";
+import AcercaDe from "./screen/Acercade";
+import Navbar from "./screen/Navbar";
+
+const App = () => {
   return (
-    <nav className="navbar">
-      <ul>
-        <img src={Logo} alt="Logo" className="logo" />
-      </ul>
-      <ul className="nav-links">
-        <li>
-          <a href="#">Inicio</a>
-        </li>
-        <li>
-          <a href="#">Acerca de</a>
-        </li>
-        <li>
-          <a href="#">Contacto</a>
-        </li>
-      </ul>
-    </nav>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/acerca-de" element={<AcercaDe />} />
+      </Routes>
+    </Router>
   );
 };
-function App() {
-  return (
-    <div className="App">
-      <Navbar />
-    </div>
-  );
-}
 
 export default App;

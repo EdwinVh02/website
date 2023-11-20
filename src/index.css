@@ -15,16 +15,47 @@
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-links li {
-    margin-right: 1rem;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-  }
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-right: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+/* styles.css */
+/* ... (otros estilos existentes) */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  overflow: hidden;
+}
+
+.modal-scrollable {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* ... (otros estilos del modal según sea necesario) */
