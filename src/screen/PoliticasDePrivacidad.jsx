@@ -1,15 +1,12 @@
-// PrivacyModal.js
-import React from "react";
-
-const PrivacyModal = ({ onClose }) => {
+function PoliticasDePrivacidad() {
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+    <div className="pol">
+      <div>
         <h2>AVISO DE PRIVACIDAD</h2>
-        <div className="modal-scrollable">
+        <div>
           <p>
             <strong>Hotel Santa Cecilia</strong>, mejor conocido como{" "}
-            <strong>Hotel Santa Cecicilia</strong>, con domicilio en calle
+            <strong>Hotel Santa Cecilia</strong>, con domicilio en calle
             Nicandro Castillo, colonia Centro de Huejutla de Reyes Hgo., ciudad
             Huejutla, municipio o delegación Huejutla de Reyes Hidalgo, c.p.
             34000, en la entidad de Hidalgo, país México, y portal de internet
@@ -229,10 +226,9 @@ const PrivacyModal = ({ onClose }) => {
             Última actualización: <strong>15/11/2023</strong>
           </p>
         </div>
-        <button onClick={onClose}>Cerrar</button>
       </div>
     </div>
   );
-};
+}
 
-export default PrivacyModal;
+export default PoliticasDePrivacidad;

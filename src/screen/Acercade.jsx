@@ -1,40 +1,22 @@
-// AcercaDe.js
-import React, { useState } from "react";
-import Politicas from "./PoliticasDePrivacidad";
+import { Link } from "react-router-dom";
 
 const AcercaDe = () => {
-  const [showModal, setShowModal] = useState(false);
-
-  const handleOpenModal = () => {
-    setShowModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
-
   return (
     <div>
       <div className="about-container">
         <h2>Acerca de Nosotros</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
-          bibendum justo, et tristique massa venenatis vitae. Proin fermentum
-          diam sed ligula feugiat, in congue sapien dapibus.
-        </p>
+        <p></p>
         <h3>Políticas</h3>
         <ul>
           <li>
-            <a href="#" onClick={handleOpenModal}>
-              Política de privacidad
-            </a>
+            <Link to="/politicas-privacidad">Política de privacidad</Link>
           </li>
-          <li>Política de cookies</li>
-          <li>Términos y condiciones</li>
+          <li>
+            <Link to="/politicas-cookies">Política de cookies</Link>
+          </li>
+          <Link to="/Terminos-condiciones">Términos y condiciones</Link>
         </ul>
       </div>
-
-      {showModal && <Politicas onClose={handleCloseModal} />}
     </div>
   );
 };

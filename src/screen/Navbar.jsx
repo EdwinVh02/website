@@ -11,7 +11,7 @@ function Navbar() {
           <Link to="/">Inicio</Link>
         </li>
         <li>
-          <Link to="acerca-de">Acerca de</Link>
+          <Link to="/acerca-de">Acerca de</Link>
         </li>
         <li>{/* <a href="#">Contacto</a> */}</li>
       </ul>
